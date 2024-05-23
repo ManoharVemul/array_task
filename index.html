@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<pre>
+<h2>
+    Task: 
+    1.write a js program to convert this array without using any methods
+    input : a=[1,[2,4,5],[3,[4,6,7]],4];
+    output : a=[1,2,4,5,3,4,6,7,4]
+    
+    
+    2.Take any array and print the values above 3, then store them in a new array.
+    
+    
+    3.take any array and check the all value should be above 1 
+    
+    
+    if above 1 then print "true" else "false"
+    
+
+    4.take any array convert into a string
+
+
+    inp:[2,3,4,5,5,6,7,7,8,9]
+    output : 2345567789
+    
+    
+    5.convert this array into 
+    
+    
+    inp : var a = ["hello","kumar","raju"]
+    
+    
+    o/p:[[eo,hell],[ua,kmr],[au,rj]]
+    
+</h2>
+</pre>
+
+
+    <script>
+//  1.write a js program to convert this array without using any methods
+//     input : a=[1,[2,4,5],[3,[4,6,7]],4];
+//     output : a=[1,2,4,5,3,4,6,7,4]
+
+let a=[1,[2,4,5],[3,[4,6,7]],4];
+let stg = a.toString();
+let emArr = [];
+console.log(stg);
+for (ele of stg){
+    if(ele!=","){
+     emArr.push(Number(ele));
+    }
+}
+console.log(emArr);
+
+
+
+//   2.Take any array and print the values above 3, then store them in a new array.
+
+let arr2 = [8,7,2,3,5,7,96,8,1];
+let emp  = [];
+
+for (i=0;i<arr2.length;i++){
+    if(arr2[i]>3){
+        emp.push(arr2[i]);
+    }
+}
+
+console.log(arr2);
+console.log("the array of greater 3 is :","  ",emp);
+//  3.take any array and check the all value should be above 1 
+    
+
+let arr3 = [9,8,7,8,5,6,0.5,4,6,1,55];
+
+for (i=0;i<arr3.length;i++){
+    if(arr3[i]>1){
+        console.log(true);
+    }else {
+        console.log(false);
+    }
+}
+
+
+// 4.take any array convert into a string
+
+// inp:[2,3,4,5,5,6,7,7,8,9]
+// output : 2345567789
+
+let arr4 = [2,3,4,5,5,6,7,7,8,9];
+let str = "";
+for (i=0;i<arr4.length;i++){
+str+=arr4[i];
+
+}
+
+console.log("the required output"," ",str);
+
+
+
+    </script>
+</body>
+</html>
