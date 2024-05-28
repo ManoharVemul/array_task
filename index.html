@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./mfavcon.png">
 </head>
 <body>
 
@@ -101,6 +102,31 @@ str+=arr4[i];
 }
 
 console.log("the required output"," ",str);
+
+// 5.convert this array into 
+    
+    
+//     inp : var a = ["hello","kumar","raju"]
+    
+    
+//     o/p:[[eo,hell],[ua,kmr],[au,rj]]
+
+let arr = ["johan","manohar","nadiswar","rajkumar"]; em=[];
+for (i=0;i<arr.length;i++){
+   ;stv="";stc=""
+    for (j=0;j<arr[i].length;j++){
+    if(arr[i][j]==="a"||arr[i][j]==="e"||arr[i][j]==="i"||arr[i][j]==="o"||arr[i][j]==="u"){
+        stv=stv+arr[i][j];
+    }else {
+        stc=stc+arr[i][j];
+    }
+    
+}
+em.push([stv,stc]);
+}
+
+console.log(`the required array that contain vowel and consonant in nested array is  `);
+console.log(em);
 
 
 
